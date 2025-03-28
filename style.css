@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(135deg, #0a0f24, #000213); 
+    background: linear-gradient(135deg, #0095c736, #023d8a6c); 
     color: #b8acde;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body{
 .header {
     display: flex;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: #0e141a30;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -54,10 +54,11 @@ body{
 
 .list a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 12px;
+    margin-left: 15px;
 }
 
 .list a:hover {
@@ -66,7 +67,7 @@ body{
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .btn {
@@ -75,7 +76,7 @@ body{
     background-color: #1a3a5d;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -85,11 +86,11 @@ body{
 }
 
 .login {
-    background-color: #007bff;
+    background-color: #0d063e;
 }
 
 .register {
-    background-color: #28a745;
+    background-color: #0d063e;
 }
 
 .login:hover {
@@ -102,15 +103,16 @@ body{
 
 
 
-.container .wrapper{
-    width: 60vw;
-    height: 75vh;
+.containers .wrapper{
+    width: 50vw;
+    height: 55vh;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     margin: 5rem auto;
+    margin-bottom: 170px;
     overflow: hidden;
 }
 
-.container .wrapper-holder {
+.containers .wrapper-holder {
     display: grid;
     grid-template-columns: repeat(5, 100%);
     height: 100%;
@@ -118,49 +120,34 @@ body{
     animation: slider 30s ease-in-out infinite alternate;
 }
 
-.container #slide-img-1 {
+.containers #slide-img-1 {
     background-image: url(Image/33b015997e9b0e8ce4739057c508834144a731ec.webp);
     background-position: center;
 }
 
-.container #slide-img-2 {
+.containers #slide-img-2 {
     background-image: url(Image/iris.webp);
     background-position: center;
 }
 
-.container #slide-img-3 {
+.containers #slide-img-3 {
     background-image: url(Image/0093ca1755094ce58cc5260f304628c4.jpg);
     background-position: center;
 }
 
-.container #slide-img-4 {
+.containers #slide-img-4 {
     background-image: url(Image/fuyj37qng1l6rwtrfw9x.jpg);
     background-position: center;
 }
 
-.container #slide-img-5 {
+.containers #slide-img-5 {
     background-image: url(Image/s2.jpg);
     background-position: center;
 }
 
-.container .button-holder .button {
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    display: inline-block;
-    margin: 0.3rem;
-}
 
-.container .button-holder {
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
-}
 
-.button:hover {
-    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.6);
-}
+
 
 @keyframes slider {
     0% {
@@ -207,7 +194,7 @@ body{
         transform: translateX(0%);
     }
 }
-.container {
+.login_container {
     position: relative;
     padding-top:100px;
     width: 300px;
@@ -288,7 +275,6 @@ button {
 button:hover {
     background: #011129;
 } 
-
 
 
 
