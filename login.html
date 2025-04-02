@@ -7,19 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login_container">
-        <img src="Image/33b015997e9b0e8ce4739057c508834144a731ec.webp" alt="Background-image" class="bg-img">
+    <div class="auth-container">
+        <img src="./image/33b015997e9b0e8ce4739057c508834144a731ec.webp" alt="Background" class="auth-bg-img">
         
-        <a href="main.html" class="back-btn">Back to Home</a>
+        <!-- <a href="main.html" class="back-btn">Back to Home</a> -->
 
+
+        <div class="auth-form">
+            <!-- <h2>Login</h2> -->
+            <div class="form-header">
+                <!-- <h2>Login</h2> -->
+                <a href="main.html" class="back-btn">Back to Home</a>
+            </div>
+=======
         <div class="form-login"> 
             <h2>Login</h2>
             <form>
                 <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email"  required>
+                <input type="email" id="email" name="email" required>
+                
                 <label for="password">Enter your password:</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
+                
+                <button type="submit" class="auth-submit-btn">Login</button>
             </form>
         </div>
     </div>
