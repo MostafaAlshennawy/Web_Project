@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="style.css">
-      <title>Home</title>
-    </head>
-
-
-
-    <body>
-      <div class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
         <div class="logo">
-          <img src="Image/logo2.png" alt="logo" class="img-header">
+            <img src="./image/logo2.png" alt="logo" class="img-header">
         </div>
 
         <ul class="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Team</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Team</a></li>
         </ul>
 
         <div class="buttons">
-          <button href="login.html" class="btn login">Login</button>
-          <button href="register.html" class="btn register">Register</button>
-      </div>    
-      </div>
+            <a href="login.html" class="btn login">Login</a>
+            <a href="register.html" class="btn register">Register</a>          
+        </div>    
+    </div>
 
-
-
-
-    <section>
-      <div class="containers">
-        <div class="wrapper">
-          <div class="wrapper-holder">
-            <div id="slide-img-1"></div>
-            <div id="slide-img-2"></div>
-            <div id="slide-img-3"></div>
-            <div id="slide-img-4"></div>
-            <div id="slide-img-5"></div>
-          </div>
+    <section class="main-container">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider-holder">
+                    <div class="slide" id="slide-img-1"></div>
+                    <div class="slide" id="slide-img-2"></div>
+                    <div class="slide" id="slide-img-3"></div>
+                    <div class="slide" id="slide-img-4"></div>
+                    <div class="slide" id="slide-img-5"></div>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
-
-      
-    </body>
+    
+    <section class="services-section">
+        <div class="service-card">
+            <h2>Car Sales</h2>
+            <p class="service-desc">Explore our latest car models with the best prices.</p>
+            <div class="overlay"></div>
+            <button class="service-btn">View More</button>
+        </div>
+        
+        <div class="service-card">
+            <h2>Car Maintenance</h2>
+            <p class="service-desc">Professional maintenance services to keep your car in top shape.</p>
+            <div class="overlay"></div>
+            <button class="service-btn">View More</button>
+        </div>
+        
+        <div class="service-card">
+            <h2>Spare Parts</h2>
+            <p class="service-desc">Genuine spare parts for all car brands.</p>
+            <div class="overlay"></div>
+            <button class="service-btn">View More</button>
+        </div>
+    </section>
+</body>
+</html>
