@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(135deg, #0095c736, #023d8a6c);
+    color: #b8acde;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: auto;
+    color: #010a14;
+    font-size: 55px;
+    font-family: Georgia, serif;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight:bold;
+    width: 800px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+h1:hover {
+    text-shadow: 5px 15px 20px #01112970;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+.product-card .flip-inner .flip-front {
+    border-radius: 70px 20px;
+}
+
+.product-card .flip-inner .flip-back {
+    border-radius: 20px 70px;
+}
+
+.product-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+
+  .product-card:hover {
+    transform: scale(1.2);
+}
+  
+  .flip-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .product-card:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-front,
+  .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .flip-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .flip-front img:hover {
+    transform: scale(1.5);
+  }
+  
+  .flip-back {
+    background-color: #536a85;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .flip-back h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+  }
+  
+  .flip-back p {
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .flip-back button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    color: #010a14;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .flip-back button:hover {
+    color: #fff;
+    background-color: #0d1925;
+  }
