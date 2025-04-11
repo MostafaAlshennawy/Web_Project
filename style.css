@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #b0b7c0; ;
+    background: #ffffff; ;
     color: #b8acde;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
@@ -44,7 +44,7 @@ body {
 
 .list a {
     text-decoration: none;
-    color: #ffffff;
+    color: #1a3a5d;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
@@ -201,14 +201,14 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #bbdefb;
+    color: #1a3a5d;
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
 }
 
 .back-btn:hover {
-    color: #90caf9;
+    color: #011129;
 }
 
 .auth-form form {
