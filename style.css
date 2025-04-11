@@ -370,9 +370,8 @@ h1:hover {
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 1rem;
-
+    gap: 10rem;
+    padding: 10rem;
 }
 
 .product-card .flip-inner .flip-front {
@@ -384,8 +383,8 @@ h1:hover {
 }
 
 .product-card {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
     perspective: 1000px;
   }
 
@@ -396,7 +395,7 @@ h1:hover {
   .flip-inner {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    transition: transform 1.6s;
     transform-style: preserve-3d;
     position: relative;
   }
@@ -422,7 +421,7 @@ h1:hover {
   }
 
   .flip-front img:hover {
-    transform: scale(1.5);
+    transform: scale(1.0);
   }
   
   .flip-back {
