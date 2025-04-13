@@ -117,10 +117,10 @@ body {
 
 .slider-holder {
     display: grid;
-    grid-template-columns: repeat(5, 100%);
+    grid-template-columns: repeat(8, 100%);
     height: 100%;
     width: 100%;
-    animation: slider 25s ease-in-out infinite ;
+    animation: slider 35s ease-in-out infinite ;
 }
 
 .slide {
@@ -149,12 +149,27 @@ body {
     background-image: url('./image/s2.jpg');
 }
 
+#slide-img-6 {
+    background-image: url('./image/Feature-Bugatti-Chiron.jpg');
+}
+
+#slide-img-7 {
+    background-image: url('./image/2023-lotus-emira_100798564.jpg');
+}
+
+#slide-img-8 {
+    background-image: url('./image/18_4645762.jpg');
+}
+
 @keyframes slider {
     0% { transform: translateX(0%); }
-    20% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    60% { transform: translateX(-300%); }
-    80% { transform: translateX(-400%); }
+    12.5% { transform: translateX(-100%); } /* 100% / 8 = 12.5% */
+    25% { transform: translateX(-200%); }
+    37.5% { transform: translateX(-300%); }
+    50% { transform: translateX(-400%); }
+    62.5% { transform: translateX(-500%); }
+    75% { transform: translateX(-600%); }
+    87.5% { transform: translateX(-700%); }
     100% { transform: translateX(0%); }
 }
 
