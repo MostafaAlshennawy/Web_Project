@@ -66,6 +66,10 @@ input{
     border: none;
     background-color: #bac0c5;
 }
+input:focus{
+    outline: none;
+    box-shadow: 0 0 7px #031634;
+}
 
 .flex{
     display: flex;
