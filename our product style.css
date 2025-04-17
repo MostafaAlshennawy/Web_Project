@@ -13,7 +13,7 @@ gap: 10px;
 .icon-circle {
   width: 40px;
   height: 40px;
-  background-color: #010a14; /* اللون الأزرق الفاتح */
+  background-color: #0b2753;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ gap: 10px;
 
 label {
     font-size: 16px;
-    color: #010a14;
+    color: #0b2753;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -60,7 +60,7 @@ label {
 }
 
 .product-card .flip-inner .flip-front {
-    border-radius: 25px 25px;
+    border-radius: 70px 20px;
 }
 
 .product-card .flip-inner .flip-back {
