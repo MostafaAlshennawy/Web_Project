@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Home</title>
+    <style>
+       
+        .user-welcome {
+            position: absolute;
+            top: 30px;
+            right: 120px;
+            color: rgb(22, 22, 58);
+            
+            font-weight: bold;
+        }
+        .logout-btn {
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            background: #060437;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .logout-btn:hover {
+            background: #305de6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./image/logo2.png" alt="logo" class="img-header">
+        </div>
+
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Product">Products</a></li>
+            <li><a href="#Team">Team</a></li>
+        </ul>
+
+        <div id="auth-section">
+            <span id="user-welcome" class="user-welcome"></span>
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+   
+    <section class="main-container">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider-holder">
+                    <div class="slide" id="slide-img-1"></div>
+                    <div class="slide" id="slide-img-2"></div>
+                    <div class="slide" id="slide-img-3"></div>
+                    <div class="slide" id="slide-img-4"></div>
+                    <div class="slide" id="slide-img-5"></div>
+                    <div class="slide" id="slide-img-6"></div>
+                    <div class="slide" id="slide-img-7"></div>
+                    <div class="slide" id="slide-img-8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section" id="services">
+        <div class="service-card">
+            <h2>Car Sales</h2>
+            <p class="service-desc">Explore our latest car models with the best prices.</p>
+            <div class="overlay"></div>
+            <button class="service-btn">View More</button>
+        </div>
+
+        <div class="service-card">
+            <h2>Car Maintenance</h2>
+            <p class="service-desc">Professional maintenance services to keep your car in top shape.</p>
+            <div class="overlay"></div>
+            <button class="service-btn">View More</button>
+        </div>
+
+        <div class="service-card">
+            <h2>Spare Parts</h2>
+            <p class="service-desc">Genuine spare parts for all car brands.</p>
+            <div class="overlay"></div>
+            <button class="service-btn">View More</button>
+        </div>
+    </section>
+    <!-- **************************************  first 6 cars   **************************************** -->
+
+
+    <h1>Choose Your Own Car</h1>
+    <main class="main">
+        <section class="products" id="Product">
+            <!--*********1********-->
+            <div class="product-card">
+                <div class="flip-inner" >
+                  <div class="flip-front">
+                    <img src="./pics/p911ts.jpg" alt="Porsche 911" width="300" height="200">
+                  </div>
+                  <div class="flip-back">
+                    <h3>Porsche 911 turbo s</h3>
+                    <p class="price">$270.000</p>
+                    <a href="buy-now.html" target="_blank"><button class="btn-buy">Buy Now</button></a>
+                  </div>
+                </div>
+              </div>
+              <!--*****2***********-->
+              <div class="product-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="./pics/fffff.jpg" alt="Ferrari F8 Spider" width="300" height="200">
+                  </div>
+                  <div class="flip-back">
+                    <h3>Ferrari F8 Spider</h3>
+                    <p class="price">$220.000</p>
+                    <a href="buy-now.html" target="_blank"><button class="btn-buy">Buy Now</button></a>
+                  </div>
+                </div>
+              </div>
+              <!--**********3***********-->
+              <div class="product-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="./pics/chevrolete.jpeg" alt="chevrolete" width="300" height="200">
+                  </div>
+                  <div class="flip-back">
+                    <h3>Chevrolete Covrolete C8</h3>
+                    <p class="price">$150.000</p>
+                    <a href="buy-now.html" target="_blank"><button class="btn-buy">Buy Now</button></a>
+                  </div>
+                </div>
+              </div>
+                <!--******4****-->
+                <div class="product-card">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="./pics/lam2.jpeg" alt="Lamborghini-Urus" width="300" height="200">
+                      </div>
+                      <div class="flip-back">
+                        <h3>Lamborghini-Urus</h3>
+                        <p class="price">$370.000</p>
+                        <a href="buy-now.html" target="_blank"><button class="btn-buy">Buy Now</button></a>
+                      </div>
+                    </div>
+                  </div>
+                    <!--*****5*****-->
+                    <div class="product-card">
+                        <div class="flip-inner">
+                          <div class="flip-front">
+                            <img src="./pics/m.jpeg" alt="Mercedes-Benz-G-Class" width="300" height="200">
+                          </div>
+                          <div class="flip-back">
+                            <h3>Mercedes-Benz-G-Class</h3>
+                            <p class="price">$149.000</p>
+                            <a href="buy-now.html" target="_blank"><button class="btn-buy">Buy Now</button></a>
+                          </div>
+                        </div>
+                      </div>
+                        <!--*****6*****-->
+                        <div class="product-card">
+                            <div class="flip-inner">
+                              <div class="flip-front">
+                                <img src="./pics/Ford Mustang Shelby GT500KR.jpeg" alt="Ford" width="300" height="200">
+                              </div>
+                              <div class="flip-back">
+                                <h3>Ford Mustang Shelby <br> GT500KR</h3>
+                                <p class="price">$270.000</p>
+                                <a href="buy-now.html" target="_blank"><button class="btn-buy">Buy Now</button></a>
+                              </div>
+                            </div>
+                            <!--**********-->     
+        </section>
+    </main>
+
+    <section class="team" id="Team">
+        <h1 class="address">Our team</h1>
+        <p class="team-line"></p>
+    
+        <div class="part1">
+            <div class="team-container">
+                <div class="team-content">
+                    <div class="team-item">
+                        <div class="team img">
+    
+                            <h2 class="team-title1 ww">Mostafa Tarek</h2>
+    
+                            <div class="team-icon">
+                                <a href="https://www.linkedin.com/in/mostafa-tarek-97b88a2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/MostafaAlshennawy1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div> <!-- team-icon -->
+    
+                            <img src="Image/mostafa.jpg" alt="Mostafa" width="220px" height="230px">
+    
+    
+                        </div> <!-- team-img -->
+                          
+                    </div>  <!-- team-item -->
+                
+    
+                    <div class="team-item div2">
+                        <div class="team-img">
+    
+                            <h2 class="team-title1 ww">Mohamed Nazeeh</h2>
+    
+                            <div class="team-icon">
+                                <a href="https://www.linkedin.com/in/mohamed-nazeeh-ba11aa2a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/Mohamed-Nazeeh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div> <!-- team-icon -->
+    
+                            <img src="Image/nazeeh2.jpg" alt="Nazeeh" width="220px" height="230px">
+    
+    
+                        </div> <!-- team-img -->
+                        
+                    </div>  <!-- team-item -->
+    
+    
+                    <div class="team-item">
+                        <div class="team-img">
+    
+                            <h2 class="team-title1 ww">Mai Mohsen</h2>
+    
+                            <div class="team-icon">
+                                <a href="https://www.linkedin.com/in/mai-mohsen-561b8231b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/MaiMohsen13?tab" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div> <!-- team-icon -->
+    
+                            <img src="Image/Mai Mohsen.jpg" alt="Mai" width="220px" height="230px">
+    
+    
+                        </div> <!-- team-img -->
+                        
+                    </div>  <!-- team-item -->
+                </div> <!-- team-content -->
+    
+    
+            </div> <!-- team-container -->
+        </div>
+    
+    
+        <div class="part2">
+            <div class="team-container">
+                <div class="team-content">
+                    <div class="team-item">
+                        <div class="team-img">
+    
+                            <h2 class="team-title1 ww">Nancy Ahmed</h2>
+    
+                            <div class="team-icon">
+                                <a href="https://www.linkedin.com/in/nancy-ahmed-667311357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/nancyahmedzzz" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div> <!-- team-icon -->
+    
+                            <img src="Image/nancy.jpg" alt="Nancy" width="220px" height="230px">
+    
+    
+                        </div> <!-- team-img -->
+                          
+                    </div>  <!-- team-item -->
+                
+    
+    
+                    <div class="team-item div2">
+                        <div class="team-img">
+    
+                            <h2 class="team-title1 ww">Salma Yasser</h2>
+    
+                            <div class="team-icon">
+                                <a href="https://www.linkedin.com/in/salma-yasser-183038358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/salmayasser-25" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div> <!-- team-icon -->
+    
+                            <img src="Image/sssss.jpg" alt="Salma" width="220px" height="230px">
+    
+    
+                        </div> <!-- team-img -->
+                        
+                    </div>  <!-- team-item -->
+    
+                    <div class="team-item">
+                        <div class="team-img">
+    
+                            <h2 class="team-title1 ww">Shereen Hammam</h2>
+    
+                            <div class="team-icon">
+                                <a href="https://www.linkedin.com/in/shereen-hammam-a7416535a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/shereenhammam4" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div> <!-- work-icon -->
+    
+                            <img src="Image/shereen.jpg" alt="Shereen" width="220px" height="230px">
+    
+    
+                        </div> <!-- team-img -->
+                        
+                    </div>  <!-- team-item -->
+                </div> <!-- team-content -->
+    
+    
+            </div> <!-- team-container -->
+        
+        </div>
+    
+    </section>
+</body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <h2> APEXAUTO </h2>
+                <p> " Where quality cars meet unmatched professionalism " </p>
+                <!-- <button class="L-button"> Learn More</button><br> -->
+                 <hr>
+            </div>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <!-- <p><b>APEXAUTO</b></p> -->
+                </div>
+                <div class="footer-column">
+                    <h3>ABOUT</h3>
+                    <ul> 
+                        <li><a href="#" target="_blank"> our works</a></li>
+                        <li><a href="#" target="_blank">our story</a></li>
+                        <li><a href="#" target="_blank">careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3> SUPPORT </h3>
+                    <ul>
+                        <li><a href="#" target="_blank"> support request </a> </li>
+                        <li><a href="#" target="_blank">contact </a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3> FOLLOW US </h3>
+                    <div > 
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+                    </div>
+                  </div>
+                <div class="footer-bottom"></br>
+                    </br>
+                    <br>
+                   <!-- <br> <input type="search" id="search" name="searsh"> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <a href="#"  target="_blank"> Privacy policy </a>
+        <p>&copy; 2024. All Rights Reserved. </p>
+      </footer>
+    </footer>
+
+    <script>
+       
+        const user = JSON.parse(localStorage.getItem('registeredUser'));
+        if (!user) {
+            window.location.href = 'login.html';
+        }
+
+       
+        document.getElementById('user-welcome').textContent = `Welcome, ${user.username}`;
+
+       
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.removeItem('registeredUser');
+            window.location.href = 'main.html';
+        });
+    </script>
+</body>
+</html>
