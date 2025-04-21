@@ -5,35 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .password-requirements {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+        }
+        .requirement {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 5px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .requirement::before {
+            content: "•";
+            color: #666;
+        }
+        .error-message {
+            display: none;
+            font-size: 12px;
+            margin-top: 5px;
+            color: #ff4444;
+        }
+        .toggle-password {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #011129;
+        }
+        .login-link a {
+            color: #062a4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="auth-container">
         <img src="./image/33b015997e9b0e8ce4739057c508834144a731ec.webp" alt="Background" class="auth-bg-img">
         
-        <!-- <a href="main.html" class="back-btn">Back to Home</a> -->
-
         <div class="auth-form">
-            <!-- <h2>Register</h2> -->
             <div class="form-header">
-                <!-- <h2>ٌRegister</h2> -->
                 <a href="main.html" class="back-btn">Back to Home</a>
             </div>
-            <form>
-                <label for="username">Enter your username:</label>
-                <input type="text" id="username" name="username" required>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="username">Enter your username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
                 
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="input-group">
+                    <label for="email">Enter your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
                 
-                <label for="password">Enter your password:</label>
-                <input type="password" id="password" name="password" required>
+                <div class="input-group">
+                    <label for="password">Enter your password:</label>
+                    <div class="password-container" style="position: relative;">
+                        <input type="password" id="password" name="password" required>
+                        <span id="toggle-password" class="toggle-password">👁️</span>
+                    </div>
+                    <div id="password-requirements" class="password-requirements">
+                        <div class="requirement">At least 8 characters</div>
+                        <div class="requirement">Contains a number</div>
+                        <div class="requirement">Contains uppercase letter</div>
+                        <div class="requirement">Contains special character</div>
+                    </div>
+                </div>
                 
-                <label for="confirm-password">Confirm password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div id="confirm-error" class="error-message"></div>
+                </div>
 
                 <button type="submit" class="auth-submit-btn">Register</button>
+                
+                <div class="login-link">
+                    Already have an account? <a href="login.html">Login</a>
+                </div>
             </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById("toggle-password").addEventListener("click", function() {
+            const passwordInput = document.getElementById("password");
+            passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+            this.textContent = passwordInput.type === "password" ? "👁️" : "🙈";
+        });
+
+        document.getElementById("password").addEventListener("focus", function() {
+            document.getElementById("password-requirements").style.display = "block";
+        });
+
+        document.getElementById("password").addEventListener("blur", function() {
+            document.getElementById("password-requirements").style.display = "none";
+        });
+
+        document.getElementById("password").addEventListener("input", function() {
+            const password = this.value;
+            const requirements = document.getElementById("password-requirements").children;
+            
+            requirements[0].style.color = password.length >= 8 ? "#4CAF50" : "#666";
+            requirements[1].style.color = /[0-9]/.test(password) ? "#4CAF50" : "#666";
+            requirements[2].style.color = /[A-Z]/.test(password) ? "#4CAF50" : "#666";
+            requirements[3].style.color = /[^A-Za-z0-9]/.test(password) ? "#4CAF50" : "#666";
+        });
+
+        document.getElementById("register-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+            const confirmError = document.getElementById("confirm-error");
+            
+            confirmError.style.display = "none";
+            
+            if (password !== confirmPassword) {
+                confirmError.textContent = "Passwords don't match";
+                confirmError.style.display = "block";
+                return;
+            }
+            
+           
+            const user = {
+                username,
+                email,
+                password
+            };
+            localStorage.setItem('registeredUser', JSON.stringify(user));
+            localStorage.setItem('justRegistered', 'true');
+            
+            window.location.href = "login.html";
+        });
+    </script>
 </body>
 </html>
