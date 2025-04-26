@@ -29,7 +29,7 @@ body {
     justify-content: center;
     width: 180px;
     height: 80px;
-    margin-right: 60px;
+    margin-right: 70px;
 }
 
 .list {
@@ -37,7 +37,7 @@ body {
     display: flex;
     gap: 40px;
     flex: 1;
-    margin-right: 250px;
+    margin-right: 300px;
 }
 
 .list a {
