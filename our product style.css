@@ -52,11 +52,12 @@ label {
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 9rem;
-    padding: 6rem;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+  padding: 10rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card .flip-inner .flip-front {
@@ -71,10 +72,11 @@ label {
     width: 300px;
     height: 200px;
     perspective: 1000px;
+    transition: transform 0.3s ease-in-out;
   }
 
   .product-card:hover {
-    transform: scale(1.0);
+    transform: scale(1.2);
 }
   
   .flip-inner {
@@ -115,9 +117,11 @@ label {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 10px;
+    padding: 40px;
+    text-align: left;
+    border-radius: 15px;
   }
   
   .flip-back h3 {
@@ -126,12 +130,15 @@ label {
   }
   
   .flip-back p {
-    font-family: Georgia, serif;
-    margin-bottom: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
+    font-size: 14px;
+    margin: 5px 0;
+    color: #f0f0f0;
+}
+
+.flip-back p strong {
+    color: #ffffff;
+}
+
   .flip-back button {
     padding: 10px 15px;
     border: none;
