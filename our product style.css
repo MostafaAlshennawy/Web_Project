@@ -61,96 +61,96 @@ label {
 }
 
 .product-card .flip-inner .flip-front {
-    border-radius: 70px 20px;
+  border-radius: 70px 20px;
 }
 
 .product-card .flip-inner .flip-back {
-    border-radius: 20px 70px;
+  border-radius: 20px 70px;
 }
 
 .product-card {
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .product-card:hover {
-    transform: scale(1.2);
+  width: 320px;
+  height: 220px;
+  perspective: 1000px;
+  transition: transform 0.3s ease-in-out;
 }
-  
-  .flip-inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 1.9s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  
-  .product-card:hover .flip-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-front,
-  .flip-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-  
-  .flip-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
-  .flip-front img:hover {
-    transform: scale(1.0);
-  }
-  
-  .flip-back {
-    background-color: #536a85;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 40px;
-    text-align: left;
-    border-radius: 15px;
-  }
-  
-  .flip-back h3 {
-    font-family: Georgia, serif;
-    margin-bottom: 10px;
-  }
-  
-  .flip-back p {
-    font-size: 14px;
-    margin: 5px 0;
-    color: #f0f0f0;
+.product-card:hover {
+  transform: scale(1.2);
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1.9s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.product-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-front img:hover {
+  transform: scale(1.0);
+}
+
+.flip-back {
+  background-color: #536a85;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.flip-back h3 {
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+}
+
+.flip-back p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #f0f0f0;
 }
 
 .flip-back p strong {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-  .flip-back button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #fff;
-    color: #010a14;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .flip-back button:hover {
-    color: #fff;
-    background-color: #0d1925;
-  }
+.flip-back button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #fff;
+  color: #010a14;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flip-back button:hover {
+  color: #fff;
+  background-color: #0d1925;
+}
