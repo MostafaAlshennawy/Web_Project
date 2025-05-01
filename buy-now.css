@@ -7,6 +7,10 @@
    justify-content: left;
    justify-content: space-around;
    position: relative;
+   border-radius: 18px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer.button{
@@ -96,12 +100,27 @@ input:focus{
     height: 30px;
     margin-top: 5px;
 }
+.bb{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
 
-
-
-
-
-
+.footer-column  .fa-facebook{
+    color: #3b38fd; 
+    margin-right: 10px;
+}
+.footer-column  .fa-twitter{
+    color: #0e98ed;
+    margin-right: 10px;
+}
+.footer-column  .fa-instagram{
+    color: #9f185c;
+    margin-right: 10px;
+}
+.footer-column .fa-whatsapp{
+    color: #24ec6d; 
+    margin-right: 10px;
+}
 
 
 
