@@ -666,10 +666,11 @@ h1:hover {
     width: 320px;
     height: 220px;
     perspective: 1000px;
+    transition: transform 0.3s ease-in-out;
   }
 
   .product-card:hover {
-    transform: scale(1.0);
+    transform: scale(1.5);
 }
   
   .flip-inner {
@@ -710,9 +711,11 @@ h1:hover {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 10px;
+    padding: 40px;
+    text-align: left;
+    border-radius: 15px;
   }
   
   .flip-back h3 {
@@ -721,11 +724,14 @@ h1:hover {
   }
   
   .flip-back p {
-    font-family: Georgia, serif;
-    margin-bottom: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+    font-size: 14px;
+    margin: 5px 0;
+    color: #f0f0f0;
+}
+
+.flip-back p strong {
+    color: #ffffff;
+}
   
   .flip-back button {
     padding: 10px 15px;
